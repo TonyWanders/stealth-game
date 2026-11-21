@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nightshift: The Meridian Vault</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #07090f; color: #e8ecf4;
+    font-family: monospace, monospace; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 18px 12px 30px; text-align: center; }
+  h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: 2px; color: #37d6e0; }
+  p.sub { margin: 0 0 14px; color: #9aa4b8; font-size: 13px; }
+  canvas { width: 960px; max-width: 100%; height: auto; display: block; margin: 0 auto;
+    border: 2px solid #2b313e; background: #141821; }
+  .keys { margin-top: 12px; color: #9aa4b8; font-size: 13px; line-height: 1.7; }
+  .keys b { color: #e8ecf4; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>NIGHTSHIFT: THE MERIDIAN VAULT</h1>
+  <p class="sub">A top-down stealth game. Three levels, no save points, no second chances after three alarms.</p>
+  <canvas id="game" width="960" height="640"></canvas>
+  <div class="keys">
+    <b>WASD / arrows</b> move &nbsp; <b>Shift</b> sneak &nbsp; <b>Q or click</b> throw a coin &nbsp;
+    <b>M</b> mute &nbsp; <b>R</b> retry level &nbsp; <b>P</b> pause &nbsp; <b>Enter</b> start<br>
+    Grab 3 intel, then reach the glowing EXIT. Bushes hide you, shadows slow the guards' eyes.
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
